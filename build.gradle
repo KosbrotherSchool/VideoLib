@@ -16,7 +16,7 @@ publishing {
     repositories {
         maven {
             // change to point to your repo, e.g. http://my.org/repo
-            url "VideoLib.jar"
+            url "https://github.com/KosbrotherSchool/VideoLib.git"
         }
     }
 }
