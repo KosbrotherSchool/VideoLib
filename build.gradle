@@ -1,0 +1,25 @@
+apply plugin: "maven-publish"
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId 'com.jasonko'
+            artifactId 'video-lib'
+            version '1.0'
+
+            artifact "VideoLib.jar"
+        }
+    }
+}
+
+publishing {
+    repositories {
+        maven {
+            // change to point to your repo, e.g. http://my.org/repo
+            url "VideoLib.jar"
+        }
+    }
+}
+
+
+
